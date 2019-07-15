@@ -1,0 +1,63 @@
+.wrapper {
+    margin: 20px;
+}
+.header {
+    background-image: url("design1_image1.jpeg");
+    height: 376px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand-name {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+
+.banner {
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+
+.logo {
+    position: absolute;
+    height: 150px;
+    right: 100px;
+    top: 340px;
+}
+
+
+.content-container {
+    display: flex;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-spacing {
+    padding-bottom: 30px;
+}
+
+.events {
+    margin-left: 70px;
+
+}
+
+.headings {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.indentation {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
