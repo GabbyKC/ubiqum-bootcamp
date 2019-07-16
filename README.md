@@ -10,8 +10,8 @@ The very first project involved building the same site "NYSL" three times.
 
 This project involed utilizing HTML and CSS skills. 
 
-Version one:
+####Version one:
 ![Alt text](project_screenshots/nysl_v1.png "Version One")
 
-Version two: 
+####Version two: 
 ![Alt text](project_screenshots/nysl_v2.png "Version One")
