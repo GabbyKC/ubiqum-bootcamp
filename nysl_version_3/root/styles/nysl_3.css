@@ -1,0 +1,55 @@
+.page-wrapper {
+    margin: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-image {
+    background-image: url("../../images/design1_image1.jpeg");
+    height: 376px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #9bf4dc
+}
+
+.name {
+    padding-top: 50px;
+    padding-right: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 120px;
+    padding: 10px 0px;
+}
+
+.main-section {
+    text-align: center;
+}
+
+.section {
+    padding-top: 40px;
+    margin: auto;
+    width: 50%;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.events {
+    padding-bottom: 20px;
+}
+
+.dates {
+    font-weight: bold;
+    font-size: 18px;
+    color: #085b2e
+}
