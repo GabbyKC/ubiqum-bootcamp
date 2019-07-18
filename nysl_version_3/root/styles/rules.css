@@ -1,0 +1,56 @@
+.home {
+    text-align: left;
+    padding: 20px 0px 0px 20px
+}
+
+header {
+    text-align: center;
+}
+
+.main {
+    margin: 40px 80px;
+}
+
+.rules {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px
+}
+
+.headings {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ol {
+    margin-top: 0px;
+}
+
+ul {
+    margin-top: 0px;
+    list-style-type: square;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.special {
+    margin-bottom: 0px;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.footer {
+    color: #1d84e4;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
