@@ -1,0 +1,73 @@
+.home {
+    text-align: left;
+    padding: 20px 0px 0px 20px
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.spacing {
+    margin-bottom: 15px;
+}
+
+.input-space {
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.left-spacing {
+    padding-left: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.box-spacing {
+    width: 200px;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.permission {
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+.submit-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    width: 200px;
+    font-size: 18px;
+    background-color: #68f5ec;
+    border-radius: 15px;
+}
+
+.footer {
+    color: #1d84e4;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}

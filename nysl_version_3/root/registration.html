@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles/registration.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="home"><a href="index.html"><i class="fas fa-chevron-left"></i> Back to Home</a></div>
+    </header>
+    <h1>Registration Form</h1>
+    <div class="container">
+
+        <form class="" action="show_data.html" method="GET">
+            <div class="spacing">
+                <label for="first">Player's First Name:</label>
+                <input id="first" class="input-space" type="text" name="first" value="" placeholder="Joe" required>
+                <label for="last" class="left-spacing">Last Name:</label>
+                <input id="last" class="input-space" type="text" name="last" value="" placeholder="Black" required>
+            </div>
+
+            <div class="spacing">
+                <label for="street">Street Address:</label>
+                <input id="street" class="input-space" type="text" name="street" value="" placeholder="123 Happy Street">
+            </div>
+
+            <div class="spacing">
+                <label for="city">City:</label>
+                <input id="city" class="input-space" type="text" name="city" value="" placeholder="Berlin">
+                <label for="zip" class="left-spacing">Zip Code:</label>
+                <input id="zip" class="input-space" type="text" name="zip" value="" placeholder="10247">
+            </div>
+
+            <div class="flex">
+                <div class="spacing">
+                    <label for="birth">Birth Date</label>
+                    <input id="birth" type="date" name="birth" value="">
+                </div>
+                <div class="left-spacing">Gender:
+                    <input id="female" type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input id="male" type="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+            </div>
+
+            <div class="spacing">
+                <div>Grade:
+                    <input id="pre" type="radio" name="grade" value="pre">
+                    <label for="pre">Pre-School</label>
+                    <input id="one" type="radio" name="grade" value="first">
+                    <label for="one">1<sup>st</sup></label>
+                    <input id="two" type="radio" name="grade" value="second">
+                    <label for="two">2<sup>nd</sup></label>
+                    <input id="three" type="radio" name="grade" value="third">
+                    <label for="three">3<sup>rd</sup></label>
+                    <input id="four" type="radio" name="grade" value="fourth">
+                    <label for="four">4<sup>th</sup></label>
+                    <input id="five" type="radio" name="grade" value="fifth">
+                    <label for="five">5<sup>th</sup></label>
+                </div>
+            </div>
+
+            <div class="spacing">
+                <label for="parent">Parent/Guardian:</label>
+                <input id="parent" class="input-space" type="text" name="parent" value="" placeholder="Billy Black" required>
+            </div>
+
+            <div class="spacing">
+                <label for="phone">Contact Phone:</label>
+                <input id="phone" class="input-space" type="tel" name="phone" value="" placeholder="+49 157 897262" required>
+                <label for="email" class="left-spacing">Contact Email:</label>
+                <input id="email" class="input-space" type="email" name="email" value="" placeholder="joe@example.com" required>
+            </div>
+
+            <p class="bold">Which elementary schools do you live near?</p>
+
+            <div class="flex">
+                <div class="box-spacing">
+                    <div class="bold spacing">First Closest School:</div>
+                    <select class="" name="first_school">
+                        <option selected disabled value="default">Please Select</option>
+                        <option value="aj">AJ Katzenmaier</option>
+                        <option value="greenb">Greenbay</option>
+                        <option value="howard">Howard A Yeager</option>
+                        <option value="marj">Marjorie P Hart</option>
+                        <option value="ne">North Elementary</option>
+                        <option value="se">South Elementary</option>
+                    </select>
+                </div>
+
+                <div class="">
+                    <div class="bold spacing">Second Closest School:</div>
+                    <select class="" name="second_school">
+                        <option selected disabled value="default">Please Select</option>
+                        <option value="aj">AJ Katzenmaier</option>
+                        <option value="greenb">Greenbay</option>
+                        <option value="howard">Howard A Yeager</option>
+                        <option value="marj">Marjorie P Hart</option>
+                        <option value="ne">North Elementary</option>
+                        <option value="se">South Elementary</option>
+                    </select>
+                </div>
+            </div>
+
+            <p><span class="bold">What position(s) do you normally play?</span> (check all that apply)</p>
+
+            <div class="flex">
+                <div class="inner-box">
+                    <div class="">
+                        <input type="checkbox" name="position_normal" value="forward">
+                        <label>Forward</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" name="position_normal" value="defense">
+                        <label>Defense</label>
+                    </div>
+                </div>
+
+                <div class="inner-box">
+                    <div class="">
+                        <input type="checkbox" name="position_normal" value="mid">
+                        <label>Midfield</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" name="position_normal" value="goalie">
+                        <label>Goalkeeper</label>
+                    </div>
+                </div>
+            </div>
+
+            <p><span class="bold">What position(s) do you want to play?</span> (check all that apply)</p>
+
+            <div class="flex">
+                <div class="inner-box">
+                    <div class="">
+                        <input type="checkbox" name="position_want" value="forward">
+                        <label>Forward</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" name="position_want" value="defense">
+                        <label>Defense</label>
+                    </div>
+                </div>
+
+                <div class="inner-box">
+                    <div class="">
+                        <input type="checkbox" name="position_want" value="mid">
+                        <label>Midfield</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" name="position_want" value="goalie">
+                        <label>Goalkeeper</label>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <input id="uniform" type="checkbox" name="uniform" value="yes_uniform">
+                <label for="uniform" class="bold">Already Have a Uniform</label>
+            </p>
+
+            <div class="flex">
+                <div class="box-spacing">
+                    <div class="spacing bold">Jersey Size:</div>
+                    <select class="" name="jersey">
+                        <option selected disabled value="default">Please Select</option>
+                        <option value="ys">Youth Small</option>
+                        <option value="ym">Youth Medium</option>
+                        <option value="yl">Youth Large</option>
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                        <option value="xl">Extra-Large</option>
+                    </select>
+                </div>
+
+                <div class="">
+                    <div class="spacing bold">Shorts Size:</div>
+                    <select class="" name="shorts">
+                        <option selected disabled value="default">Please Select</option>
+                        <option value="ys">Youth Small</option>
+                        <option value="ym">Youth Medium</option>
+                        <option value="yl">Youth Large</option>
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                        <option value="xl">Extra-Large</option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="bold permission">Permission to Play</p>
+
+            <p>
+                I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                sponsored activities, which transportation.
+            </p>
+
+            <p>
+                By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                cancellation policy and agree to its terms.
+            </p>
+
+            <div>
+                <label for="signature">Parent/Guardian Signature:</label>
+                <input id="signature" class="input-space" type="text" name="signature" value="" placeholder="Billy Black" required>
+                <label for="date" class="left-spacing">Date:</label>
+                <input id="date" type="date" name="date" value="" required>
+            </div>
+
+            <p>*By signing your name above, you are hereby authorizing this form.</p>
+            <div class="submit-container">
+                <input class="button" type="submit" name="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer"><i class="far fa-copyright"></i> GabbyKC</div>
+    </footer>
+
+</body>
+
+</html>
