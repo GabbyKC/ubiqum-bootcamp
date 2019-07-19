@@ -56,6 +56,18 @@ table {
     width: 300px;
 }
 
+.maps {
+    display: flex;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+iframe {
+    height: 200px;
+    width: 200px;
+    padding-right: 20px;
+}
+
 .contact-info {
     padding-left: 40px;
 }
