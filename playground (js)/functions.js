@@ -41,3 +41,11 @@ function repeat(array) {
     }
     return result;
 }
+
+var myColor = ["Red", "Green", "White", "Black"];
+
+function string (array) {
+    for (var i = 0; i < array.length; i++) {
+        console.log("'"+ array[i] +"'");
+    }
+}
