@@ -1,6 +1,6 @@
 function addBands (array) {
     for (var i = 0; i < array.length; i++) {
-        var li = document.createElement("LI");
+        var li = document.createElement("li");
         var node = document.createTextNode(array[i]);
         li.appendChild(node);
 

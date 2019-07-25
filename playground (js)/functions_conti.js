@@ -1,15 +1,14 @@
 x = 45567;
 
 function reverse(num) {
-    return (
-        parseFloat(
-            num
-            .toString()
-            .split('')
-            .reverse()
-            .join('')
-        )
-    )
+    var str = num.toString();
+
+    var result = '';
+    for (var i = str.length-1; i >= 0; i--) {
+        result = result.concat(str.charAt(i));
+    }
+
+    return Number(result);
 }
 
 x = 'webmaster';
@@ -25,12 +24,12 @@ function alpha(x) {
 
 str = 'prince of persia';
 
-function titleCase(str) {
-  str = str.toLowerCase().split(' ');
-  for (var i = 0; i < str.length; i++) {
-    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+function titleCase(sentence) {
+  var words = sentence.toLowerCase().split(' ');
+  for (var i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
   }
-  return str.join(' ');
+  return words.join(' ');
 }
 
 
