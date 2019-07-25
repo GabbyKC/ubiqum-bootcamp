@@ -29,7 +29,7 @@ function createCell(memberData) {
     return cell
 }
 
-// Creating Table
+// Looping Table
 var members = data.results[0]["members"];
 
 var table = document.getElementById("senate-data");
