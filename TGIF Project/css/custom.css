@@ -45,3 +45,11 @@ img.float-right {
 .bottom-spacing {
     padding-bottom: 30px;
 }
+
+.spacing-glance-table {
+    max-width: 500px;
+}
+
+.headings {
+    font-size: 20px;
+}

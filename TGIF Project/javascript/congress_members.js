@@ -34,15 +34,19 @@ function createCell(memberData) {
     var cellText = document.createTextNode(memberData ? memberData : "");
     cell.appendChild(cellText);
 
-    return cell
+    return cell;
 }
 
-// Looping Table
 var table = document.getElementById("senate-data");
 var body = document.createElement("tbody");
 
-for (var i = 0; i < members.length; i++) {
-    var row = createRow(members[i]);
-    body.appendChild(row);
+
+function createTable(members) {
+    for (var i = 0; i < members.length; i++) {
+        var row = createRow(members[i]);
+        body.appendChild(row);
+    }
+    table.appendChild(body);
 }
-table.appendChild(body);
+
+createTable(members);
