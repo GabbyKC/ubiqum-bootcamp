@@ -53,13 +53,32 @@
             </div>
         </nav>
 
+        <div class="d-flex justify-content-between spacing">
+            <div class="spacing-glance-table">
+                <p class="font-weight-bold headings">Party Loyalty</p>
+                <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting
+                    for their party's nominee for office and legislation that backs their party's agenda.
+                </p>
+            </div>
+            <div class="">
+                <p class="text-right font-weight-bold headings">House at a glance</p>
+                <table id="senate-glance" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>No. of Reps</th>
+                            <th>% Voted w/ Party</th>
+                        </tr>
+                    </thead>
 
+                    <tbody id="senate-glance-body">
 
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-
-
-
-
+        <hr>
 
 
         <div class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
@@ -73,6 +92,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../data/pro-Congress-113-house.js"></script>
+    <script src="../javascript/views.js"></script>
+    <script src="../javascript/statistics.js"></script>
+    <script type="text/javascript">
+    createSenateGlanceTable(statistics);
+    </script>
+
 
 </body>
 
