@@ -166,6 +166,9 @@ function createNewRow(information) {
 }
 
 // generating member engagement :
+// this function is going to use missed_votes as a key in an object and we are going to map members based on that
+// key. We will then sort that mapping depending on least/ most engagment, then taking 10% of that sorted list and
+// simply displaying the menbers that are associated with those keys.
 // Engagment = boolean value..if param true is passed -> Most Engaged.
 function getMemberEngagment(members, engagement) {
 
@@ -182,7 +185,7 @@ function getMemberEngagment(members, engagement) {
         }
     }
     var groupedMemberKeys = Object.keys(groupedMembers);
-    var sortedGroupMembers = engagement ? groupedMemberKeys : groupedMemberKeys.sort(function(a, b){return b-a});
+    var sortedGroupMembers = engagement ? groupedMemberKeys.sort(function(a, b){return a-b}) : groupedMemberKeys.sort(function(a, b){return b-a});
     var numOfRelevantMembers = Math.ceil((groupedMemberKeys.length / 100) * percentage);
 
     sortedGroupMembers = sortedGroupMembers.slice(0, numOfRelevantMembers);

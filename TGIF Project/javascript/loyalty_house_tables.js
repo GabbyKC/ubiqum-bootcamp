@@ -1,0 +1,1 @@
+createHouseGlanceTable(statistics);
