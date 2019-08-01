@@ -37,9 +37,7 @@ img.float-right {
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0px 50px 0px;
+    margin: 10px 0px;
 }
 
 .bottom-spacing {
@@ -52,4 +50,16 @@ img.float-right {
 
 .headings {
     font-size: 20px;
+}
+
+.filter-by-party {
+    display: flex;
+}
+
+.filter-header {
+    text-decoration: underline;
+}
+
+.filter-name-spacing {
+    margin-right: 10px;
 }
