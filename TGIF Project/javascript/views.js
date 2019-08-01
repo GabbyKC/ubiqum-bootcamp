@@ -142,6 +142,29 @@ function createMostEngagedTable(statistics) {
     table.appendChild(body);
 }
 
+// creating least loyal table :
+function createLeastLoyalTable(statistics) {
+    var table = document.getElementById("least-loyal");
+    var body = document.getElementById("least-loyal-body");
+    var information = statistics.leastLoyalMembers;
+    for (var i = 0; i < information.length; i++) {
+        var row = createNewRow(information[i]);
+        body.appendChild(row);
+    }
+    table.appendChild(body);
+}
+
+// creating most loyal table :
+function createMostLoyalTable(statistics) {
+    var table = document.getElementById("most-loyal");
+    var body = document.getElementById("most-loyal-body");
+    var information = statistics.mostLoyalMembers;
+    for (var i = 0; i < information.length; i++) {
+        var row = createNewRow(information[i]);
+        body.appendChild(row);
+    }
+    table.appendChild(body);
+}
 
 function createNewRow(information) {
     var nameCell = document.createElement("td");
@@ -190,7 +213,7 @@ function getMemberEngagment(members, engagement) {
 
     sortedGroupMembers = sortedGroupMembers.slice(0, numOfRelevantMembers);
 
-    var leastEngagedMembers = [];
+    var engagedMembers = [];
     for (var i = 0; i < sortedGroupMembers.length; i++) {
         var missedVotesKey = sortedGroupMembers[i];
         for (var j = 0; j < groupedMembers[missedVotesKey].length; j++) {
@@ -201,12 +224,54 @@ function getMemberEngagment(members, engagement) {
             var fullName = firstName +" "+middleName+" "+lastName;
             var numOfVotes = currentMember["missed_votes"];
             var percentageOfVotes = currentMember["missed_votes_pct"];
-            leastEngagedMembers.push({
+            engagedMembers.push({
                 "fullName": fullName,
                 "numOfVotes": numOfVotes,
                 "percentageOfVotes": percentageOfVotes
             });
         }
     }
-    return leastEngagedMembers;
+    return engagedMembers;
+}
+
+// //////////////////////////////////
+
+function getMemberLoyalty(members, loyalty) {
+
+    var percentage = 10;
+    var groupedMembers = {};
+
+    for (var i = 0; i < members.length; i++) {
+        var key = members[i]["votes_with_party_pct"];
+        if (groupedMembers[key]) {
+            groupedMembers[key].push(members[i]);
+        } else {
+            groupedMembers[key] = [members[i]];
+        }
+    }
+    var groupedMemberKeys = Object.keys(groupedMembers);
+    var sortedGroupMembers = loyalty ? groupedMemberKeys.sort(function(a, b){return b-a}) : groupedMemberKeys.sort(function(a, b){return a-b});
+    var numOfRelevantMembers = Math.ceil((groupedMemberKeys.length / 100) * percentage);
+
+    sortedGroupMembers = sortedGroupMembers.slice(0, numOfRelevantMembers);
+
+    var loyalMembers = [];
+    for (var i = 0; i < sortedGroupMembers.length; i++) {
+        var missedVotesKey = sortedGroupMembers[i];
+        for (var j = 0; j < groupedMembers[missedVotesKey].length; j++) {
+            var currentMember = groupedMembers[missedVotesKey][j];
+            var firstName = currentMember["first_name"] ? currentMember["first_name"] : "";
+            var middleName = currentMember["middle_name"] ? currentMember["middle_name"] : "";
+            var lastName = currentMember["last_name"] ? currentMember["last_name"] : "";
+            var fullName = firstName +" "+middleName+" "+lastName;
+            var numOfVotes = currentMember["total_votes"];
+            var percentageOfVotes = currentMember["votes_with_party_pct"];
+            loyalMembers.push({
+                "fullName": fullName,
+                "numOfVotes": numOfVotes,
+                "percentageOfVotes": percentageOfVotes
+            });
+        }
+    }
+    return loyalMembers;
 }

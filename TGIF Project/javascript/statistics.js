@@ -8,6 +8,8 @@ var avgRepublicans = findAvgRepublicans(republicanMembers);
 var avgIndependents = findAvgIndependents(independentMembers);
 var leastEngagedMembers = getMemberEngagment(members, false);
 var mostEngagedMembers = getMemberEngagment(members, true);
+var leastLoyalMembers = getMemberLoyalty(members, false);
+var mostLoyalMembers = getMemberLoyalty(members, true);
 
 var statistics = {
     "parties": [
@@ -28,5 +30,7 @@ var statistics = {
         }
     ],
     "leastEngagedMembers": leastEngagedMembers,
-    "mostEngagedMembers": mostEngagedMembers
+    "mostEngagedMembers": mostEngagedMembers,
+    "leastLoyalMembers": leastLoyalMembers,
+    "mostLoyalMembers": mostLoyalMembers
 }
