@@ -1,0 +1,383 @@
+html {
+    background-image: url("clouds.jpg");
+}
+
+.center {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e2ed62;
+    position: absolute;
+    top: 300px;
+    left: 650px;
+}
+
+.inner-center {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eef47d;
+    position: absolute;
+    top: 325px;
+    left: 675px;
+}
+
+.petal{
+    width: 60px;
+    height: 160px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+}
+
+.one {
+    position: absolute;
+    top: 150px;
+    left: 676px;
+}
+
+
+.two {
+    position: absolute;
+    top: 390px;
+    left: 676px;
+}
+
+.petal-three {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 330px;
+    left: 500px;
+}
+
+.petal-four {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 330px;
+    left: 740px;
+}
+
+.petal-five {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 272px;
+    left: 732px;
+    transform: rotate(-24deg);
+}
+
+.petal-six {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 222px;
+    left: 689px;
+    transform: rotate(-55deg);
+}
+
+.petal-seven {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 213px;
+    left: 665px;
+    transform: rotate(-69deg);
+}
+
+.petal-eight {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 213px;
+    left: 575px;
+    transform: rotate(-107deg);
+}
+
+.petal-nine {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 218px;
+    left: 564px;
+    transform: rotate(-119deg);
+}
+
+.petal-ten {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 275px;
+    left: 516px;
+    transform: rotate(-159deg);
+}
+
+.petal-eleven {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 373px;
+    left: 510px;
+    transform: rotate(-197deg);
+}
+
+.petal-twelve {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 395px;
+    left: 525px;
+    transform: rotate(-216deg);
+}
+
+.petal-thirteen {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 428px;
+    left: 570px;
+    transform: rotate(-242deg);
+}
+
+.petal-fourteen {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 440px;
+    left: 665px;
+    transform: rotate(-289deg);
+}
+
+.petal-fifteen {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 420px;
+    left: 688px;
+    transform: rotate(-302deg);
+}
+
+.petal-sixteen {
+    width: 160px;
+    height: 60px;
+    background-color: #5b0d1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 725px;
+    transform: rotate(-320deg);
+}
+
+.inner {
+    width: 15px;
+    height: 95px;
+    background-color: #78293b;
+    border-radius: 50%;
+}
+
+.inner-one {
+    position: absolute;
+    top: 185px;
+    left: 700px;
+}
+
+.inner-two {
+    position: absolute;
+    top: 410px;
+    left: 698px;
+}
+
+.petal-three-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 350px;
+    left: 545px;
+}
+
+.petal-four-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 350px;
+    left: 760px;
+}
+
+.petal-five-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 760px;
+    transform: rotate(-22deg);
+}
+
+.petal-six-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 246px;
+    left: 718px;
+    transform: rotate(-54deg);
+}
+
+.petal-seven-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 228px;
+    left: 698px;
+    transform: rotate(-69deg);
+}
+
+.petal-eight-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 228px;
+    left: 608px;
+    transform: rotate(-107deg);
+}
+
+.petal-nine-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 253px;
+    left: 600px;
+    transform: rotate(-123deg);
+}
+
+.petal-ten-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 297px;
+    left: 546px;
+    transform: rotate(-159deg);
+}
+
+.petal-eleven-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 384px;
+    left: 546px;
+    transform: rotate(-197deg);
+}
+
+.petal-twelve-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 414px;
+    left: 557px;
+    transform: rotate(-216deg);
+}
+
+.petal-thirteen-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 446px;
+    left: 600px;
+    transform: rotate(-242deg);
+}
+
+.petal-fourteen-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 446px;
+    left: 694px;
+    transform: rotate(-289deg);
+}
+
+.petal-fifteen-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 430px;
+    left: 715px;
+    transform: rotate(-307deg);
+}
+
+.petal-sixteen-inner {
+    width: 95px;
+    height: 15px;
+    background-color: #78293b;
+    border-radius: 50%;
+    position: absolute;
+    top: 404px;
+    left: 757px;
+    transform: rotate(-328deg);
+}
+
+.stem {
+    width: 24px;
+    height: 400px;
+    position: absolute;
+    /* border-radius: 50%; */
+    top: 422px;
+    left: 688px;
+    background-color: #0d691e;
+    transform: rotate(-9deg);
+}
+
+.leaf1 {
+    background-color: #0d691e;
+    width: 100px;
+    height: 100px;
+}
