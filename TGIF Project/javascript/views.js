@@ -83,6 +83,8 @@ function createSenateGlanceTable(statistics) {
         body.appendChild(row);
     }
     table.appendChild(body);
+    var loader = document.getElementById("loader");
+    loader.remove();
 }
 
 // creating house at a glance table :
@@ -95,6 +97,8 @@ function createHouseGlanceTable(statistics) {
         body.appendChild(row);
     }
     table.appendChild(body);
+    var loader = document.getElementById("loader");
+    loader.remove();
 }
 
 function createRow(party) {

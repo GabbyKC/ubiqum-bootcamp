@@ -81,7 +81,6 @@ function createTable(members, filters) {
     var independentIsChecked = filters ? filters.independent : false;
     var stateSelected = filters ? filters.state : "";
 // if you dont pass filters, it will default all checkboxes to false :
-
     var table = document.getElementById("senate-data");
 
     var existingBody = table.querySelector("tbody")
@@ -116,6 +115,8 @@ function createTable(members, filters) {
         }
     }
     table.appendChild(body);
+    var loader = document.getElementById("loader");
+    loader.remove();
 }
 
 function createRow(member) {
