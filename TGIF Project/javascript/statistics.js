@@ -36,17 +36,17 @@ var statistics = {
         {
             "name": "Democrats",
             "total": democratMembers.length,
-            "avgNumVoters": avgDemocrats.toFixed(2)
+            "avgNumVoters": avgDemocrats.toFixed(2)+'%'
         },
         {
             "name": "Republicans",
             "total": republicanMembers.length,
-            "avgNumVoters": avgRepublicans.toFixed(2)
+            "avgNumVoters": avgRepublicans.toFixed(2)+'%'
         },
         {
             "name": "Independents",
             "total": independentMembers.length,
-            "avgNumVoters": avgIndependents.toFixed(2)
+            "avgNumVoters": avgIndependents.toFixed(2)+'%'
         }
     ],
     "leastEngagedMembers": leastEngagedMembers,

@@ -227,7 +227,7 @@ function getMemberEngagment(members, engagement) {
             var lastName = currentMember["last_name"] ? currentMember["last_name"] : "";
             var fullName = firstName +" "+middleName+" "+lastName;
             var numOfVotes = currentMember["missed_votes"];
-            var percentageOfVotes = currentMember["missed_votes_pct"];
+            var percentageOfVotes = currentMember["missed_votes_pct"]+'%';
             engagedMembers.push({
                 "fullName": fullName,
                 "numOfVotes": numOfVotes,
@@ -269,7 +269,7 @@ function getMemberLoyalty(members, loyalty) {
             var lastName = currentMember["last_name"] ? currentMember["last_name"] : "";
             var fullName = firstName +" "+middleName+" "+lastName;
             var numOfVotes = currentMember["total_votes"];
-            var percentageOfVotes = currentMember["votes_with_party_pct"];
+            var percentageOfVotes = currentMember["votes_with_party_pct"]+'%';
             loyalMembers.push({
                 "fullName": fullName,
                 "numOfVotes": numOfVotes,
