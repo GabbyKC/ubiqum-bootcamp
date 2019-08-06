@@ -6,6 +6,10 @@ img {
     width: 200px;
 }
 
+.active {
+    color: black;
+}
+
 .brand {
     align-self: center;
     font-size: 50px;

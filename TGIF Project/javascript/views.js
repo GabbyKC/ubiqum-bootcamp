@@ -73,24 +73,10 @@ function findAvgIndependents(members) {
     return result;
 }
 
-// creating senate at a glance table :
-function createSenateGlanceTable(statistics) {
-    var table = document.getElementById("senate-glance");
-    var body = document.getElementById("senate-glance-body");
-    var parties = statistics.parties;
-    for (var i = 0; i < parties.length; i++) {
-        var row = createRow(parties[i]);
-        body.appendChild(row);
-    }
-    table.appendChild(body);
-    var loader = document.getElementById("loader");
-    loader.remove();
-}
-
-// creating house at a glance table :
-function createHouseGlanceTable(statistics) {
-    var table = document.getElementById("house-glance");
-    var body = document.getElementById("house-glance-body");
+// creating glance table :
+function createGlanceTable(statistics) {
+    var table = document.getElementById("glance-table");
+    var body = document.getElementById("glance-body");
     var parties = statistics.parties;
     for (var i = 0; i < parties.length; i++) {
         var row = createRow(parties[i]);
