@@ -52,8 +52,9 @@ img.float-right {
     font-size: 20px;
 }
 
-.filter-by-party {
+.filter-section {
     display: flex;
+    justify-content: space-between;
 }
 
 .filter-header {
