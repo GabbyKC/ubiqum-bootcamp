@@ -111,7 +111,7 @@ function createTable(members, filters) {
             } else if (independentIsChecked && isIndependent) {
                 var row = createRow(members[i]);
                 body.appendChild(row);
-            }
+            } 
         }
     }
     table.appendChild(body);
