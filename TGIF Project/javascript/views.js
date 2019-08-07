@@ -39,6 +39,9 @@ function findAvgDemocrats(members) {
     var total = 0.0
     for (var i = 0; i < members.length; i++) {
         var individual = members[i]["votes_with_party_pct"];
+        if (individual == null || individual == undefined) {
+            individual = 0.0;
+        }
         total = total + individual;
     }
     var result = total / members.length;
@@ -53,7 +56,7 @@ function findAvgRepublicans(members) {
     var total = 0.0
     for (var i = 0; i < members.length; i++) {
         var individual = members[i]["votes_with_party_pct"];
-        if (individual == null || undefined) {
+        if (individual == null || individual == undefined) {
             individual = 0.0;
         }
         total = total + individual;
@@ -70,6 +73,9 @@ function findAvgIndependents(members) {
     var total = 0.0
     for (var i = 0; i < members.length; i++) {
         var individual = members[i]["votes_with_party_pct"];
+        if (individual == null || individual == undefined) {
+            individual = 0.0;
+        }
         total = total + individual;
     }
     var result = total / members.length;

@@ -5,6 +5,8 @@ function responseCallback() {
   members = data.results[0].members;
 
   createTable(members);
+  var loader = document.getElementById("loader");
+  loader.remove();
   createStateDropdown(members);
 }
 
@@ -111,12 +113,16 @@ function createTable(members, filters) {
             } else if (independentIsChecked && isIndependent) {
                 var row = createRow(members[i]);
                 body.appendChild(row);
-            } 
+            }
         }
     }
+    if (!body.hasChildNodes()) {
+        var noResults = document.createElement("td");
+        var noResultsText = document.createTextNode("Sorry... No Results Were Found");
+        noResults.appendChild(noResultsText);
+        body.appendChild(noResults);
+    }
     table.appendChild(body);
-    var loader = document.getElementById("loader");
-    loader.remove();
 }
 
 function createRow(member) {
