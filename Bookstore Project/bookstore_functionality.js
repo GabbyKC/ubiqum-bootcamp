@@ -59,3 +59,17 @@ function createBookCards(books) {
         cardBack.className = "flip-card-back";
     }
 }
+
+function searchBooks () {
+    var searchedWord = document.getElementById("search").value;
+    searchedWord = searchedWord.toLowerCase();
+
+    var books = document.getElementsByClassName("flip-card");
+    for (var i = 0; i < books.length; i++) {
+        if (books[i].innerHTML.toLowerCase().includes(searchedWord)) {
+            books[i].style.display = "flex";
+        } else {
+            books[i].style.display = "none";
+        }
+    }
+}

@@ -20,13 +20,15 @@
 
             <div class="search-bar">
                 <div class="">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="search" name="searchBar" onkeyup="searchBooks()" placeholder="Search by Title...">
+                    <i class="fas fa-search d-none d-lg-inline-block"></i>
+                    <input type="text" id="search" name="searchBar" oninput="searchBooks()" placeholder="Search by Title or Description">
                 </div>
             </div>
         </div>
 
-        <div class="d-flex flex-wrap container" id="books-container">
+        <hr>
+
+        <div class="d-flex flex-wrap" id="books-container">
         </div>
     </div>
 
