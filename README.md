@@ -20,3 +20,9 @@ This project involved utilizing HTML and CSS skills.
 ![Alt text](project_screenshots/nysl_v3.png "Version One")
 
 ### Project Two:
+
+"TGIF" - Transparent Government In Fact.
+The second project involved utilizing HTML, CSS, Javascript and Bootstrap.
+
+#### Final Version:
+![Alt text](project_screenshots/tgif.png "Final Version")
