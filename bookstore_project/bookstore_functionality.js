@@ -1,21 +1,33 @@
-var books = [];
+let books = [];
 
-function responseCallback() {
-  var data = JSON.parse(this.responseText);
-  books = data.books;
+fetch('https://api.myjson.com/bins/zyv02')
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+        books = data.books;
+        createBookCards(books);
+    })
+    .catch(err => {
+        console.log('oh snap, summit went wrong', err);
+    });
 
-  createBookCards(books);
-}
-
-function errorCallback(err) {
-  console.log('oh snap, summit went wrong', err);
-}
-
-var ajaxRequest = new XMLHttpRequest();
-ajaxRequest.onload = responseCallback;
-ajaxRequest.onerror = errorCallback;
-ajaxRequest.open('get', `https://api.myjson.com/bins/zyv02`, true);
-ajaxRequest.send();
+// function responseCallback() {
+//   var data = JSON.parse(this.responseText);
+//   books = data.books;
+//
+//   createBookCards(books);
+// }
+//
+// function errorCallback(err) {
+//   console.log('oh snap, summit went wrong', err);
+// }
+//
+// var ajaxRequest = new XMLHttpRequest();
+// ajaxRequest.onload = responseCallback;
+// ajaxRequest.onerror = errorCallback;
+// ajaxRequest.open('get', `https://api.myjson.com/bins/zyv02`, true);
+// ajaxRequest.send();
 
 function createBookCards(books) {
     var container = document.getElementById("books-container");
