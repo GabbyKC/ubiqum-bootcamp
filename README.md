@@ -31,7 +31,7 @@ The second project involved utilizing HTML, CSS, Javascript and Bootstrap.
 
 "Stress Test". You are given two days to complete an "online bookstore". The focus here is on
 fetching and displaying data. This project involved utilizing HTML, CSS, Fancybox, Javascript and Bootstrap.
-(Optional you could also add a search bar feature)
+(Optionally you could also add a search bar feature)
 
 #### Final Version:
 ![Alt text](project_screenshots/quickpeek.png "Final Version")
