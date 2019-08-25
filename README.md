@@ -35,3 +35,11 @@ fetching and displaying data. This project involved utilizing HTML, CSS, Fancybo
 
 #### Final Version:
 ![Alt text](project_screenshots/quickpeek.png "Final Version")
+
+### Project Four:
+
+The Beer Store. This project is quite similar to the one before it, the bookstore. I used the same "flip card" idea for
+displaying the beers as I did for the books. More importantly the focus here was on making use of [this](https://www.brewerydb.com/developers/docs) REST API, thus forcing me to experiment with pagination and infinite scroll.
+
+#### Final Version:
+![Alt text](project_screenshots/beerstore.png "Final Version")
