@@ -41,55 +41,39 @@ function fetchBeers(pageNumber) {
         });
 }
 
+function createBeerTemplate(beer) {
+    return `
+        <div class='flip-card' data-id='${beer.id}'>
+            <div class='flip-card-inner'>
+                <div class='flip-card-front'>
+                    <img src='${beer.image}' />
+                    <div class='headers'>${beer.name}</div>
+                </div>
+                <div class='flip-card-back'>
+                    <p class='back-header'>${beer.name}</p>
+                    <p>${beer.abv}</p>
+                    <p>${beer.ibu}</p>
+                    <p>${beer.organic}</p>
+                    <p>${beer.status}</p>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
 function createBeerGallery(beers) {
-    let container = document.getElementById('beer-container');
     for (let i = 0; i < beers.length; i++) {
+        let beerTemplate = createBeerTemplate({
+            id: beers[i].id,
+            image: getBeerImageSrc(beers[i]),
+            name: beers[i].name,
+            abv: getABVText(beers[i]),
+            ibu: getIBUText(beers[i]),
+            organic: getOrganicDetail(beers[i]),
+            status: getStatus(beers[i])
+        })
 
-        let flipContainer = document.createElement('div');
-        let card = document.createElement('div');
-        let cardFront = document.createElement('div');
-        let beerName = document.createElement('div');
-        let nameText = document.createTextNode(beers[i].name);
-        let image = document.createElement('img');
-        image.setAttribute('src', getBeerImageSrc(beers[i]));
-
-        cardFront.appendChild(image);
-        cardFront.appendChild(beerName);
-        beerName.appendChild(nameText);
-        card.appendChild(cardFront);
-        flipContainer.appendChild(card);
-        container.appendChild(flipContainer);
-
-        let cardBack = document.createElement('div');
-        let innerBeerName = document.createElement('p');
-        let innerBeernameText = document.createTextNode(beers[i].name);
-        let abvDetail = document.createElement('p');
-        let abvDetailText = document.createTextNode(getABVText(beers[i]));
-        let ibuDetail = document.createElement('p');
-        let ibuDetailText = document.createTextNode(getIBUText(beers[i]));
-        let organicDetail = document.createElement('p');
-        let organicDetailText = document.createTextNode(getOrganicDetail(beers[i]));
-        let statusDetail = document.createElement('p');
-        let statusDetailText = document.createTextNode(getStatus(beers[i]));
-
-        innerBeerName.appendChild(innerBeernameText);
-        abvDetail.appendChild(abvDetailText);
-        ibuDetail.appendChild(ibuDetailText);
-        organicDetail.appendChild(organicDetailText);
-        statusDetail.appendChild(statusDetailText);
-        cardBack.appendChild(innerBeerName);
-        cardBack.appendChild(abvDetail);
-        cardBack.appendChild(ibuDetail);
-        cardBack.appendChild(organicDetail);
-        cardBack.appendChild(statusDetail);
-        card.appendChild(cardBack);
-
-        flipContainer.className = "flip-card";
-        flipContainer.setAttribute('data-id', beers[i].id);
-        card.className = "flip-card-inner";
-        cardFront.className = "flip-card-front";
-        cardBack.className = "flip-card-back";
-        innerBeerName.className = "back-header"
+        $('#beer-container').append(beerTemplate);
     }
 }
 
