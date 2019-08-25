@@ -37,9 +37,23 @@ body {
 }
 
 .flip-card-back {
-  background-color: beige;
+  background-color: white;
+  border: 2px solid #498aab;
   color: #790973;
   transform: rotateY(180deg);
   text-align: center;
   padding: 20px;
+}
+
+.back-header {
+    font-style: italic;
+    color: #498aab;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.end-content {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
 }
