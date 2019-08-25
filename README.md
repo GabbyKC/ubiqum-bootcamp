@@ -1,6 +1,6 @@
 # ubiqum-bootcamp
 
-Projects I have built while attending Ubiqum Bootcamp Berlin:
+Projects I have built while attending Ubiqum Bootcamp in Berlin:
 
 ### Project One:
 
