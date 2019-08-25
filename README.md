@@ -21,8 +21,8 @@ This project involved utilizing HTML and CSS skills.
 
 ### Project Two:
 
-"TGIF" - Transparent Government In Fact.
-The second project involved utilizing HTML, CSS, Javascript and Bootstrap.
+"TGIF" - Transparent Government In Fact. This is the first project to introduce the concept
+of fetching live data. It involved utilising HTML, CSS, Javascript, AJAX and Bootstrap, centred around [this](https://www.propublica.org/datastore/api/propublica-congress-api) API.
 
 #### Final Version:
 ![Alt text](project_screenshots/tgif.png "Final Version")
@@ -30,7 +30,7 @@ The second project involved utilizing HTML, CSS, Javascript and Bootstrap.
 ### Project Three:
 
 "Stress Test". You are given two days to complete an "online bookstore". The focus here is on
-fetching and displaying data. This project involved utilizing HTML, CSS, Fancybox, Javascript and Bootstrap.
+fetching and displaying data. This project involved utilising HTML, CSS, Fancybox, Javascript and Bootstrap.
 (Optionally you could also add a search bar feature)
 
 #### Final Version:
@@ -38,7 +38,7 @@ fetching and displaying data. This project involved utilizing HTML, CSS, Fancybo
 
 ### Project Four:
 
-The Beer Store. This project is quite similar to the one before it, the bookstore. I used the same "flip card" idea for
+The Beer Store. This project is quite similar to the one before it, the bookstore. I used the same "flip card" design for
 displaying the beers as I did for the books. More importantly the focus here was on making use of [this](https://www.brewerydb.com/developers/docs) REST API, thus forcing me to experiment with pagination and infinite scroll.
 
 #### Final Version:
