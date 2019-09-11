@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    -webkit-align-items: center;
+    margin-top: 150px;
+}
+
+.content-text {
+    position: relative;
+    height: 300px;
+    max-width: 570px;
+}
+
+.first-p {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.second-p {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.button-container {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 220px
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        margin-left: 100px;
+    }
+}
+
+.button {
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    cursor: pointer;
+    font-family: 'Livvic', sans-serif;
+    padding: 12px 28px;
+    font-size: 18px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}

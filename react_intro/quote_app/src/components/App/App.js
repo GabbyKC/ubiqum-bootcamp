@@ -1,6 +1,5 @@
 import React from 'react';
-import Quote from './Quote.js';
-import Button from './Button.js';
+import Quote from '../Quote/Quote.js';
 import './App.css';
 
 
@@ -8,7 +7,6 @@ function App() {
   return (
     <div>
       <Quote/>
-      <Button/>
     </div>
   );
 }
