@@ -1,0 +1,21 @@
+.button-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: beige;
+    border: 1px solid white;
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: 'Livvic', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: white;
+}

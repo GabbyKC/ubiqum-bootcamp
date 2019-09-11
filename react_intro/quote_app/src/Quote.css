@@ -1,0 +1,23 @@
+.quote-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 200px;
+}
+
+.content-container {
+    max-width: 570px;
+}
+
+.first-p {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.second-p {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
