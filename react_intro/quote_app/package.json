@@ -5,7 +5,7 @@
   "dependencies": {
     "kind-of": "^6.0.3",
     "minimist": "^1.2.5",
-    "object-path": "^0.11.5",
+    "object-path": "^0.11.8",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "^4.0.3",
